@@ -25,7 +25,7 @@ test('handle Drop down', async({page})=>{
       //Print all the dd values
     const ddValues =await page.$$("#country option")
     for(const value of ddValues){
-        console.log(await value.textContent()); 
+        console.log(await value.textContent())
     }
 
     //check the presence of the value from dd - approach 2
